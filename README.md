@@ -8,7 +8,7 @@ Describe what you want and Claude builds it: a whole community, a single channel
 
 [![Discord](https://img.shields.io/badge/Join_the_community-Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/babcVNJBet)
 
-[⚡ Quick Start](QUICKSTART.md) · [Try it](#try-it) · [Discord](https://discord.gg/babcVNJBet) · [Demo](#demo) · [Blueprint](BLUEPRINT.md)
+[⚡ Quick Start](QUICKSTART.md) · [Onboarding](ONBOARDING.md) · [Try it](#try-it) · [Discord](https://discord.gg/babcVNJBet) · [Demo](#demo) · [Blueprint](BLUEPRINT.md)
 
 </div>
 
@@ -58,7 +58,7 @@ You can also just type `/discord` with no arguments to see the current bot + act
 
 ## What's inside
 
-**51 Discord tools** wrapped in **two skills** and **one agent** — covering channels, roles, messages, embeds, AutoMod, onboarding, welcome screens, scheduled events, members, webhooks, and bulk server templates. `/discord` is the do-anything front door; `/discord:setup` is the one-shot configuration wizard.
+**64 Discord tools** wrapped in **three skills** (`/discord`, `/discord:setup`, and the reusable `agents-seo`) and **one agent** — covering channels, roles, messages, embeds, AutoMod, onboarding, welcome screens, scheduled events, threads, members, webhooks, and bulk server templates. `/discord` is the do-anything front door; `/discord:setup` is the one-shot configuration wizard.
 
 | Capability | Try saying |
 |---|---|
@@ -74,7 +74,15 @@ You can also just type `/discord` with no arguments to see the current bot + act
 | Webhooks | *"`/discord` create a webhook in #releases and post the changelog"* |
 | Anything else | `discord_raw_request` — direct REST escape hatch |
 
-**Bundled server templates:** `gaming-community`, `study-group`, `dev-community`, `content-creator`. Compose your own as a JSON spec or describe what you want and let the architect agent draft one.
+**Bundled server templates (9):** `ai-community`, `blockchain-enterprise-community`, `clow-ecosystem`, **`clow-studio-launch`** (Product Hunt launch HQ), `content-creator`, `dev-community`, `gaming-community`, `startup-team`, `study-group`. Compose your own as a JSON spec or describe what you want and let the architect agent draft one.
+
+### Featured: launch a Product Hunt server in one command
+
+```
+/discord apply the clow-studio-launch template
+```
+
+Creates a launch-day-ready server for [clow.studio](https://clow.studio): LAUNCH + INFO + CLAW BOTS + COMMUNITY + BUILD + VOICE categories, roles for Hunter / Launch Day OG / Early User / Investor / Contributor, a Launch Stage stage channel, and four AutoMod rules (slurs, invite spam, raid guard, token-leak blocker).
 
 ## Community
 

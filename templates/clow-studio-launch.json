@@ -1,0 +1,73 @@
+{
+  "name": "Clow Studio — Launch HQ",
+  "description": "Product Hunt launch community for clow.studio — PicoClaw (private dev assistant) and OpenClaw (community AI). Built for hunters, early users, maintainers, and investors.",
+  "guild": {
+    "verification_level": "low",
+    "default_message_notifications": "only_mentions",
+    "explicit_content_filter": "members_without_roles"
+  },
+  "roles": [
+    { "name": "Founders",       "color": "#ED4245", "permissions": ["administrator"], "hoist": true,  "mentionable": true  },
+    { "name": "Core Team",      "color": "#5865F2", "permissions": ["kick_members","ban_members","manage_channels","manage_roles","manage_messages","moderate_members","manage_threads","view_audit_log"], "hoist": true, "mentionable": true },
+    { "name": "Hunter",         "color": "#FEE75C", "permissions": ["send_messages","embed_links","attach_files","add_reactions","use_slash_commands","read_message_history","create_public_threads","send_messages_in_threads"], "hoist": true,  "mentionable": true  },
+    { "name": "Launch Day OG",  "color": "#EB459E", "permissions": ["send_messages","embed_links","attach_files","add_reactions","use_slash_commands","read_message_history","create_public_threads","send_messages_in_threads"], "hoist": true,  "mentionable": true  },
+    { "name": "Early User",     "color": "#57F287", "permissions": ["send_messages","embed_links","attach_files","add_reactions","use_slash_commands","read_message_history","create_public_threads","send_messages_in_threads"], "hoist": true,  "mentionable": false },
+    { "name": "Investor",       "color": "#9B59B6", "permissions": ["send_messages","embed_links","attach_files","add_reactions","use_slash_commands","read_message_history"], "hoist": true,  "mentionable": false },
+    { "name": "Contributor",    "color": "#1ABC9C", "permissions": ["send_messages","embed_links","attach_files","add_reactions","use_slash_commands","read_message_history","create_public_threads"], "hoist": true,  "mentionable": false },
+    { "name": "Member",         "color": "#99AAB5", "permissions": ["send_messages","embed_links","add_reactions","use_slash_commands","read_message_history"], "hoist": false, "mentionable": false }
+  ],
+  "categories": [
+    { "name": "🚀 LAUNCH" },
+    { "name": "📣 INFO" },
+    { "name": "🤖 CLAW BOTS" },
+    { "name": "💬 COMMUNITY" },
+    { "name": "🛠 BUILD" },
+    { "name": "🎙 VOICE" }
+  ],
+  "channels": [
+    { "name": "launch-day",        "type": "announcement", "category": "🚀 LAUNCH", "topic": "Live Product Hunt updates. Upvote ❯ https://www.producthunt.com — follow for rank pings." },
+    { "name": "upvote-and-review", "type": "text",         "category": "🚀 LAUNCH", "topic": "Drop your PH handle, say hi, leave a review — we'll shout you out in #thanks." },
+    { "name": "launch-chat",       "type": "text",         "category": "🚀 LAUNCH", "topic": "Hype, hot-takes, and launch-day energy. No spam, no self-promo outside the pinned thread." },
+    { "name": "thanks",            "type": "text",         "category": "🚀 LAUNCH", "topic": "Founders personally thank every upvoter. Shout-outs live here." },
+    { "name": "welcome",           "type": "text",         "category": "📣 INFO",   "topic": "First stop. Grab a role in #roles, then introduce yourself in #introductions." },
+    { "name": "rules",             "type": "text",         "category": "📣 INFO",   "topic": "Code of conduct. Be kind. Ship things. Disagree in public, debate in good faith." },
+    { "name": "roles",             "type": "text",         "category": "📣 INFO",   "topic": "React to pick: 🚀 Hunter · 🧪 Early User · 💰 Investor · 🛠 Contributor." },
+    { "name": "announcements",     "type": "announcement", "category": "📣 INFO",   "topic": "Official product updates. Follow to crosspost to your own server." },
+    { "name": "roadmap",           "type": "text",         "category": "📣 INFO",   "topic": "Public roadmap. Vote with reactions. Comment in threads." },
+    { "name": "changelog",         "type": "announcement", "category": "📣 INFO",   "topic": "Ship notes for PicoClaw and OpenClaw. Latest first." },
+    { "name": "picoclaw",          "type": "text",         "category": "🤖 CLAW BOTS", "topic": "PicoClaw — private dev assistant. /ask /code /debug /review /devflow /status" },
+    { "name": "openclaw",          "type": "text",         "category": "🤖 CLAW BOTS", "topic": "OpenClaw — community AI. /chat /research /compare /learn /help" },
+    { "name": "bot-playground",    "type": "text",         "category": "🤖 CLAW BOTS", "topic": "Try commands. Compare answers. Break things gently." },
+    { "name": "bot-feedback",      "type": "forum",        "category": "🤖 CLAW BOTS", "topic": "Report issues. Suggest commands. Share prompts that worked." },
+    { "name": "bot-status",        "type": "text",         "category": "🤖 CLAW BOTS", "topic": "Automated uptime & health. Read-only." },
+    { "name": "introductions",     "type": "text",         "category": "💬 COMMUNITY", "topic": "Three lines: who you are, what you're building, what you need." },
+    { "name": "general",           "type": "text",         "category": "💬 COMMUNITY", "topic": "Anything AI, dev, startup. Hot takes welcome." },
+    { "name": "show-and-tell",     "type": "forum",        "category": "💬 COMMUNITY", "topic": "Ship logs, demos, screenshots. One post per project." },
+    { "name": "founder-notes",     "type": "text",         "category": "💬 COMMUNITY", "topic": "Behind-the-scenes from the clow.studio founders. Comment freely." },
+    { "name": "reads",             "type": "text",         "category": "💬 COMMUNITY", "topic": "Links worth sharing. One-line take required." },
+    { "name": "help",              "type": "forum",        "category": "🛠 BUILD",     "topic": "Stuck? Include: what you tried · error · env · versions." },
+    { "name": "integrations",      "type": "text",         "category": "🛠 BUILD",     "topic": "Hook PicoClaw / OpenClaw into your stack (Slack, Linear, GitHub, Vercel…)." },
+    { "name": "prompts",           "type": "text",         "category": "🛠 BUILD",     "topic": "Prompt library. Post the prompt, the result, and the model." },
+    { "name": "contrib",           "type": "text",         "category": "🛠 BUILD",     "topic": "Issues tagged `good-first-issue`, RFCs, and open PRs." },
+    { "name": "Launch Stage",      "type": "stage",        "category": "🎙 VOICE",     "user_limit": 500 },
+    { "name": "Office Hours",      "type": "voice",        "category": "🎙 VOICE",     "user_limit": 25 },
+    { "name": "Coworking",         "type": "voice",        "category": "🎙 VOICE",     "user_limit": 10 }
+  ],
+  "welcome_screen": {
+    "enabled": true,
+    "description": "🚀 Clow Studio launch HQ — PicoClaw (private dev) + OpenClaw (community AI). Hunt us on Product Hunt, break the bots, meet the makers.",
+    "channels": [
+      { "channel": "launch-day",        "description": "Live launch updates",      "emoji_name": "🚀" },
+      { "channel": "rules",             "description": "Start here",                "emoji_name": "📜" },
+      { "channel": "introductions",     "description": "Say hi in 3 lines",         "emoji_name": "👋" },
+      { "channel": "openclaw",          "description": "Try the AI assistant",      "emoji_name": "🤖" },
+      { "channel": "show-and-tell",     "description": "Ship logs & demos",         "emoji_name": "✨" }
+    ]
+  },
+  "automod_rules": [
+    { "name": "Block slurs",        "trigger": "keyword_preset", "presets": ["slurs"], "block_message": "Please keep it respectful." },
+    { "name": "Block invite spam",  "trigger": "keyword",        "keyword_filter": ["discord.gg/","discord.com/invite/","discordapp.com/invite/"], "block_message": "Invites need mod approval — DM a moderator.", "exempt_roles": ["Founders","Core Team"] },
+    { "name": "Launch-day raid guard","trigger": "mention_spam", "mention_total_limit": 5, "mention_raid_protection_enabled": true, "block_message": true },
+    { "name": "Block token leaks",  "trigger": "keyword",        "keyword_filter": ["sk-*","ghp_*","xoxb-*","AKIA*"], "block_message": "That looks like a secret. Rotate it immediately." }
+  ]
+}
