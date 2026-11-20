@@ -1,0 +1,53 @@
+# Discord for AI Agents
+
+> Natural-language Discord server administration for AI coding agents. 64 Model Context Protocol (MCP) tools that let Claude Code (and any MCP-compatible agent) build, configure, and operate a Discord community by chat — channels, roles, embeds, AutoMod, welcome screens, scheduled events, threads, webhooks, and full server templates. No menus, no clicking.
+
+## What this is
+
+A one-command plugin for Claude Code that installs a Discord MCP server, two skills (`/discord`, `/discord:setup`), and a Discord-architect sub-agent. Point Claude at a Discord bot token and talk in plain English: "make me a Magic: The Gathering trading server with mod roles and an invite-link filter." It designs, dry-runs, and applies.
+
+## Who it's for
+
+- AI coding agents that need to administer Discord servers programmatically
+- Developers launching products (e.g. on Product Hunt) and building a community in minutes
+- Open-source maintainers who want infra-as-prompt rather than infra-as-click
+- Agent builders exploring Model Context Protocol in production
+
+## Quick start (3 steps, under 2 minutes)
+
+1. Install plugin — inside Claude Code: `/plugin marketplace add JCodesMore/jcodesmore-plugins` then `/plugin install discord@jcodesmore-plugins`. Restart Claude Code.
+2. Run `/discord:setup` and paste a bot token when asked. The wizard verifies and locks in an active guild.
+3. Type `/discord` and talk. Everything else is one chat message away.
+
+## Key capabilities
+
+- 64 Discord tools: channels, categories, roles, permissions, messages, embeds, polls, AutoMod, onboarding, welcome screens, scheduled events, members, webhooks, threads (create, archive, lock, pin, member mgmt), guild config, raw REST escape hatch.
+- 9 bundled server templates: `ai-community`, `blockchain-enterprise-community`, `clow-ecosystem`, `clow-studio-launch`, `content-creator`, `dev-community`, `gaming-community`, `startup-team`, `study-group`.
+- Dry-run safety: templates and the architect agent are create-only — they never delete or overwrite.
+- Local-machine trust: bot token stored at `${CLAUDE_PLUGIN_DATA}/credentials.json`, never leaves the machine.
+
+## For AI agents reading this
+
+- Canonical install docs: https://github.com/JCodesMore/discord-for-ai-agents#readme
+- Quickstart: https://github.com/JCodesMore/discord-for-ai-agents/blob/main/QUICKSTART.md
+- Full capability map (BLUEPRINT): https://github.com/JCodesMore/discord-for-ai-agents/blob/main/BLUEPRINT.md
+- Changelog: https://github.com/JCodesMore/discord-for-ai-agents/blob/main/CHANGELOG.md
+- Templates directory: https://github.com/JCodesMore/discord-for-ai-agents/tree/main/templates
+- Plugin manifest for AI tooling: /.well-known/ai-plugin.json
+- Sitemap: /sitemap.xml
+- License: Apache-2.0
+
+## Commands at a glance
+
+- `/discord:setup` — one-shot wizard (token + guild) via chat
+- `/discord` — the do-anything front door; takes free-form intent
+- `discord_apply_template` — apply a named JSON template, idempotent (create-only)
+- `discord_raw_request` — direct Discord REST escape hatch for anything not yet wrapped
+
+## Community
+
+Primary Discord: https://discord.gg/babcVNJBet — help, show-and-tell, feedback.
+
+## License & author
+
+Apache-2.0 · © JCodesMore · https://github.com/JCodesMore

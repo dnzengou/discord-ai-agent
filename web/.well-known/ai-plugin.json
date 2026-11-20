@@ -1,0 +1,53 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "discord_for_ai_agents",
+  "name_for_human": "Discord for AI Agents",
+  "description_for_model": "An MCP server + Claude Code plugin that exposes 64 Discord administration tools to AI agents. Create channels and categories, manage roles and permissions, send messages and embeds, configure AutoMod rules, set up welcome screens, schedule events, manage threads and webhooks, and apply full server templates — all by natural-language instruction. Idempotent and create-only for destructive paths. Install via Claude Code marketplace: `/plugin install discord@jcodesmore-plugins`.",
+  "description_for_human": "Run your Discord server by talking to Claude. 64 tools, 9 templates, ~2 min setup.",
+  "auth": { "type": "none" },
+  "api": {
+    "type": "mcp",
+    "url": "https://github.com/JCodesMore/discord-for-ai-agents"
+  },
+  "logo_url": "https://raw.githubusercontent.com/JCodesMore/discord-for-ai-agents/main/.claude-plugin/logo.png",
+  "contact_email": "noreply@anthropic.com",
+  "legal_info_url": "https://github.com/JCodesMore/discord-for-ai-agents/blob/main/LICENSE",
+  "install_url": "https://github.com/JCodesMore/discord-for-ai-agents#quick-start",
+  "capabilities": [
+    "discord.channels.manage",
+    "discord.roles.manage",
+    "discord.messages.send",
+    "discord.embeds.build",
+    "discord.automod.configure",
+    "discord.welcome_screen.configure",
+    "discord.onboarding.configure",
+    "discord.events.schedule",
+    "discord.threads.manage",
+    "discord.webhooks.manage",
+    "discord.members.moderate",
+    "discord.templates.apply",
+    "discord.rest.raw"
+  ],
+  "templates": [
+    "ai-community",
+    "blockchain-enterprise-community",
+    "clow-ecosystem",
+    "clow-studio-launch",
+    "content-creator",
+    "dev-community",
+    "gaming-community",
+    "startup-team",
+    "study-group"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "discord",
+    "discord-bot",
+    "ai-agents",
+    "claude-code",
+    "agentic",
+    "community-launch",
+    "product-hunt"
+  ]
+}
